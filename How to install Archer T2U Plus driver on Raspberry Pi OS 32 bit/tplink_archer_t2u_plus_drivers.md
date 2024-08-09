@@ -27,4 +27,4 @@ iwconfig
 ```
 You should now see wlan1:
 
-![alt text](image-2.png)
+![alt text](wlan1.png)
