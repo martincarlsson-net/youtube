@@ -25,5 +25,6 @@ rtl8821au/5.12.5.2, 6.6.31+rpt-rpi-v7, armv7l: installed
 ```bash
 iwconfig
 ```
-You should now see wlan1
+You should now see wlan1:
+
 ![alt text](image-2.png)
