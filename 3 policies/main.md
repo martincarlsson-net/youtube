@@ -14,6 +14,85 @@ edit "blocklist_firehol_level1"
 next
 end
 
+config firewall address
+edit "Russia"
+set type geography
+set color 19
+set country "RU"
+next
+edit "Ukraine"
+set type geography
+set color 11
+set country "UA"
+next
+edit "China"
+set type geography
+set color 7
+set country "CN"
+next
+edit "Nigeria"
+set type geography
+set color 15
+set country "NG"
+next
+edit "Romania"
+set type geography
+set color 10
+set country "RO"
+next
+edit "Brazil"
+set type geography
+set color 3
+set country "BR"
+next
+edit "India"
+set type geography
+set color 1
+set country "IN"
+next
+edit "North Korea"
+set type geography
+set color 6
+set country "KP"
+next
+edit "Iran"
+set type geography
+set color 1
+set country "IR"
+next
+edit "Denmark"
+set type geography
+set color 6
+set country "DK"
+next
+edit "Sweden"
+set type geography
+set color 19
+set country "SE" 
+next
+edit "Norway"
+set type geography
+set color 6
+set country "NO" 
+next
+edit "Finland"
+set type geography
+set color 19
+set country "FI" 
+next
+end
+config firewall addrgrp
+edit "scandinavia"
+set member "Sweden" "Norway" "Denmark" "Finland"
+set color 19
+next
+edit "blocked_countries"
+set member "Russia" "Ukraine" "China" "Nigeria" "Romania" "Brazil" "India" "North Korea" "Iran"
+set color 6
+next
+end
+
+
 config firewall service custom
 edit "gre"
 set category "Tunneling"
